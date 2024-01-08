@@ -1,0 +1,31 @@
+@hostname = localhost
+@port = 3001
+@host = http://{{hostname}}:{{port}}
+
+###
+
+GET {{host}}/api/jokes HTTP/1.1
+Accept: application/json
+
+
+
+###
+
+GET {{host}}/api/jokes/6462f476d9a9da9dbeade34e HTTP/1.1
+Accept: application/json
+
+###
+POST {{host}}/api/jokes HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "answer":" ma reponse",
+    "question" :"m",
+
+    "category": "ma categorie"
+}
+
+###
+DELETE {{host}}/api/jokes/659a7147ac44385471fb7c26 HTTP/1.1
+Accept: application/json
