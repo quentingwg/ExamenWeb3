@@ -1,0 +1,17 @@
+# Get All Scores
+GET http://localhost:3001/scores
+Accept: application/json
+
+###
+
+# Create New Score
+# Note: Replace the joke ID and username with actual values
+POST http://localhost:3001/scores
+Content-Type: application/json
+
+{
+    "joke": "5f50c31e467a5b00203f456c", 
+    "username": "exampleUser",
+    "score": 8
+}
+

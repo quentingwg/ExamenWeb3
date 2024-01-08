@@ -1,0 +1,29 @@
+###
+
+# Get All Jokes
+GET http://localhost:3001/jokes
+Accept: application/json
+
+###
+
+# Get Joke by ID (replace :id with an actual joke ID)
+GET http://localhost:3001/jokes/6461f476d9a9da9dbeade34e
+Accept: application/json
+
+###
+
+# Create New Joke
+POST http://localhost:3001/jokes
+Content-Type: application/json
+
+{
+    "question": "Why did the programmer quit his job?",
+    "answer": "Because he didn't get arrays.",
+    "category": "Programming"
+}
+
+###
+
+# Delete Joke by ID (replace :id with an actual joke ID)
+DELETE http://localhost:3001/jokes/:id
+Accept: application/json
